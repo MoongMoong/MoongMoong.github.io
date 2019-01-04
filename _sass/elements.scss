@@ -187,6 +187,22 @@ kbd {
 	box-shadow: inset 0 -1px 0 $color_pink_swan;
 }
 
+// keyboard category
+kbc {
+	display: inline-block;
+	margin: 0 1px;
+	padding: 1px 8px;
+	@include font-rem(10);
+	font-weight: bold;
+	color: $color_fuscous_gray;
+	vertical-align: middle;
+	background-color: $color_alabaster;
+	border: solid 1px $color_celeste;
+	border-bottom-color: $color_pink_swan;
+	border-radius: 3px;
+	box-shadow: inset 0 -1px 0 $color_pink_swan;
+}
+
 // go up button
 .goup-container {
     border-radius: 3px !important;
