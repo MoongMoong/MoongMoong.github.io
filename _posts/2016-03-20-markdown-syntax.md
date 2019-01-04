@@ -9,6 +9,7 @@ tag:
 - sample
 - test
 - jekyll
+categories: [blog_tutorial]
 comments: true
 ---
 

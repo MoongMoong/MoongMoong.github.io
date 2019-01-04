@@ -10,6 +10,7 @@ tag:
 - blog
 - about
 - theme
+categories: [blog_tutorial]
 comments: true
 ---
 
