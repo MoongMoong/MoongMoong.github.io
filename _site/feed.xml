@@ -1,4 +1,118 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://moongmoong.github.io/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="https://moongmoong.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://moongmoong.github.io/" rel="alternate" type="text/html" /><updated>2019-01-04T22:43:52+09:00</updated><id>https://moongmoong.github.io/</id><title type="html">Jaeseok Kim blog</title><subtitle>I'm a Machine Learning enginear.</subtitle><entry><title type="html">우분투 이클립스 설치(Install eclipse in ubuntu for c++)</title><link href="https://moongmoong.github.io/install_eclips_ubuntu/" rel="alternate" type="text/html" title="우분투 이클립스 설치(Install eclipse in ubuntu for c++)" /><published>2019-01-04T09:33:36+09:00</published><updated>2019-01-04T09:33:36+09:00</updated><id>https://moongmoong.github.io/install_eclips_ubuntu</id><content type="html" xml:base="https://moongmoong.github.io/install_eclips_ubuntu/">&lt;h3 id=&quot;오늘은-c-스터디를-위하여-이클립스를-설치해보려-한다&quot;&gt;오늘은 C++ 스터디를 위하여 이클립스를 설치해보려 한다.&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://moongmoong.github.io/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="https://moongmoong.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://moongmoong.github.io/" rel="alternate" type="text/html" /><updated>2019-01-05T00:03:03+09:00</updated><id>https://moongmoong.github.io/</id><title type="html">Jaeseok Kim blog</title><subtitle>I'm a Machine Learning enginear.</subtitle><entry><title type="html">[NLP] BERT란 무엇인가?</title><link href="https://moongmoong.github.io/Bert/" rel="alternate" type="text/html" title="[NLP] BERT란 무엇인가?" /><published>2019-01-04T11:33:00+09:00</published><updated>2019-01-04T11:33:00+09:00</updated><id>https://moongmoong.github.io/Bert</id><content type="html" xml:base="https://moongmoong.github.io/Bert/">&lt;h2 id=&quot;bert에-대해-알아보자&quot;&gt;BERT에 대해 알아보자&lt;/h2&gt;
+
+&lt;p&gt;최근 NLP분야에서 가장 압도적인 성능을 보이는&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://arxiv.org/pdf/1810.04805.pdf&quot;&gt;BERT&lt;/a&gt;.(이하 버트, Bidirectional Encoder Representations from Transformers)&lt;/p&gt;
+
+&lt;p&gt;2018년 11월에 구글이 공개한 모델로 NLP 전 분야에서 State of the art를 달성하려하는 괴물 모델… 오늘은 이에 대해서 정리하고 마무리를 지으려 한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;bert의-핵심-키워드&quot;&gt;BERT의 핵심 키워드&lt;/h3&gt;
+
+&lt;p&gt;BERT는 사실 새로운 패러다임을 제시한 논문은 아니다.
+최근 알려진 높은 성능을 갖는 기술들의 종합이라는 것이 핵심이다.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;트랜스퍼 러닝(transfer learning)&lt;/li&gt;
+  &lt;li&gt;Transformer 모델 적용&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;간단하게 위에 두가지를 핵심으로 볼 수 있는데 각각에 대해서 이야기 해보자&lt;/p&gt;
+
+&lt;h3 id=&quot;트랜스퍼-러닝transfer-learning--semi-supervised-learning&quot;&gt;트랜스퍼 러닝(transfer learning) / Semi-supervised learning&lt;/h3&gt;
+
+&lt;p&gt;딥러닝 공부를 하다보면 절대로 피할수 없는 문제가 있다.
+바로 &lt;strong&gt;데이터 부족&lt;/strong&gt; 문제인데, 막대한 데이터가 필요한 현실과 데이터를 만들 수 없는 현실이 참 아이러니하다.&lt;/p&gt;
+
+&lt;p&gt;BERT뿐 아니라 최근 높은 성능을 갖는 NLP 모델들은 이를 극복하기 위해서 &lt;strong&gt;트랜스퍼 러닝&lt;/strong&gt;을 적용한다.&lt;/p&gt;
+
+&lt;p&gt;NLP분야에서 NER(Named-entity recognition)이든 QA(Question &amp;amp; Answer)이든 상관없이 공통적으로 &lt;strong&gt;언어&lt;/strong&gt;가 갖는 특징이 있다.&lt;/p&gt;
+
+&lt;p&gt;BERT는 pre-training이라는 이름으로 해당 task에 맞는 데이터가 아닌 인터넷에 방대하게 퍼져있는 (wikipedia, google 등)의 문서들을 활용해서 언어모델(Language model)을 학습시킨다.&lt;/p&gt;
+
+&lt;p&gt;이렇게 pre-training된 모델을 다시 load해서 해당 task에 맞는 데이터에 추가 훈련을 시켜주는 것을 트랜스퍼 러닝이라 하고 이를 통해서 데이터 부족의 한계를 상당부분 극복할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;Semi-supervised learning이라 불리는 이유는 BERT가 최종적으로 pre-training에서 un-labeled된 위키피디아와 같은 데이터를 사용하고, post-training에서 Squard1.0과 같은 labeled된 데이터를 사용하여 unsupervised laerning과 supervised learning이 모두 적용되었기 때문이다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;pre-training&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;이 부분이 어떻게 수행되는가는 다음주쯤에 업데이트 하도록 하겠습니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;transformer-모델-적용-end-to-end&quot;&gt;Transformer 모델 적용 End-to-end&lt;/h3&gt;
+
+&lt;p&gt;BERT가 사용하는 트랜스포머(Transformer)는 &lt;a href=&quot;https://papers.nips.cc/paper/7181-attention-is-all-you-need.pdf&quot;&gt;Attention is all you need&lt;/a&gt;. 라는 논문에서 제안한 모델 구조이다.&lt;/p&gt;
+
+&lt;p&gt;2017년 가장 핫했던 모델인 만큼 기본성능이 아주 높다.
+그럼 이제 왜 이 모델이 성능이 높은지 알아보도록 하자.&lt;/p&gt;
+
+&lt;p&gt;기본적으로 BERT와 비교되야할 기술들은 다음과 같다.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;word2vec&lt;/li&gt;
+  &lt;li&gt;OpenAI GPT&lt;/li&gt;
+  &lt;li&gt;ELMO&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;이 세가지 기술들은 기본적으로 word embedding 테크닉의 일종이다.&lt;/p&gt;
+
+&lt;p&gt;BERT이전의 NLP task 모델은 위의 세가지 기술과 같은 word embedding 알고리즘에서 나온 vector를 입력으로 받는 main 모델을 따로 구성한다.&lt;/p&gt;
+
+&lt;p&gt;반면에 BERT는 End-to-end로 추가적인 모델 구성없이 task까지 수행하는 모델 인데.. 사실 이 부분은 그리 중요하지 않다.&lt;/p&gt;
+
+&lt;p&gt;3가지 기술과 BERT가 기본적으로 ‘Word들의 갖는 뜻’, ‘Word 들이 문장 내에서 다른 단어들과의 상관관계’에 집중하는 것으로 성능을 확보했다는 공통점이 있는 것이 핵심이다.&lt;/p&gt;
+
+&lt;p&gt;각 기술들에 대해서도 차차 글을 작성하겠지만.. 이번에는 핵심적인 부분만 짚고 넘어가도록 하겠다.&lt;/p&gt;
+
+&lt;p&gt;논문에 삽입된 이미지를 참고하면 좋을 것 같아서 삽입해 두었다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/26134358/50693610-cd6c6b80-107a-11e9-8b0b-1c2a7f863460.png&quot; alt=&quot;2019-01-04 23-44-44&quot; /&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;word2vec&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;기본적으로 string인 word를 특정 dim을 갖는 float vector로 매핑하는 기술이다&lt;/li&gt;
+  &lt;li&gt;비슷한 단어들은 서로간의 벡터 거리가 가깝도록, 관련이 없는 단어들은 벡터 거리가 멀어지도록 embedding할 수 있게 훈련한다.&lt;/li&gt;
+  &lt;li&gt;오로지 single word만을 입력받기 때문에 문장 내에서 , &lt;strong&gt;뜻에 변화를 줄 수 있는 연관된 단어들의 정보를 사용불가&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;OpenAI GPT
+    &lt;ul&gt;
+      &lt;li&gt;연속된 word의 집합인 문장을 입력받고, 각 word의 embedding vector를 출력한다.&lt;/li&gt;
+      &lt;li&gt;문맥정보(Contextual information)라 불리는 인접한 단어들의 정보를 활용하기 위해서 이전 word들의 embedding 과정에서 생성된 및 hidden layer의 출력들을 다음 word를 embedding할 때 입력으로 같이 사용하게된다.&lt;/li&gt;
+      &lt;li&gt;문맥정보를 활용는 시도로 성능을 높일 수 있었지만 다음과 같은 두가지 한계점을 갖는다.&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul&gt;
+      &lt;li&gt;문장의 &lt;strong&gt;초기 단어들은 문맥정보를 활용불가&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;긴 문장의 경우 &lt;strong&gt;후반부 단어들은 너무 막대한 단어들의 정보가 입력&lt;/strong&gt;되고, 어느 단어가 중요한지 알 수 없다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ELMO
+    &lt;ul&gt;
+      &lt;li&gt;ELMO같은 경우는 따로 한번 더 글을 작성할 계획이 있다.&lt;/li&gt;
+      &lt;li&gt;OpenAI GPT가 갖는 한계점 중 한가지를 극복하기 위해서 &lt;strong&gt;forward-LSTM, backword-LSTM&lt;/strong&gt;을 동시에 사용한다.&lt;/li&gt;
+      &lt;li&gt;두개의 LSTM을 구성하는것으로 &lt;strong&gt;초반부의 단어들도 뒷 부분의 단어들의 특징을 반영&lt;/strong&gt;할 수 있다.&lt;/li&gt;
+      &lt;li&gt;하지만 주변의 단어중 &lt;strong&gt;어느 단어가 중요한지 알 수 없는점&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;LSTM cell이 갖는 &lt;strong&gt;먼 단어에 대한 정보 소실&lt;/strong&gt;과 그 정도조차 알 수 없는점&lt;/li&gt;
+      &lt;li&gt;RNN 레이어의 고질적인 문제인 &lt;strong&gt;병렬 연산의 비효율&lt;/strong&gt;이 한계로 제시된다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;BERT(Transformer)
+    &lt;ul&gt;
+      &lt;li&gt;Attention을 적용시키는 것으로 전체 문장의 모든 단어를 동시에 입력받고 중요한 단어가 어떤 단어인지 Attention module을 통해서 찾을 수 있도록 훈련&lt;/li&gt;
+      &lt;li&gt;어떤 단어를 주목하고 있는지 확인할 수 있다.&lt;/li&gt;
+      &lt;li&gt;아주 먼 단어와의 상관관계까지 고려할 수 있다.&lt;/li&gt;
+      &lt;li&gt;단점 : 엄청난 크기의 model size로 인한 computation cost&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;이 단점을 구글이 TPU를 멀티로 사용하는것으로 해결함..&lt;/strong&gt; 구글이 친절하게 pre-training된 savefile을 공개해서 우리는 post-training만 하면 되어서 아주 빠른 훈련이 가능&lt;/li&gt;
+      &lt;li&gt;Large model, basic model이 있는데 Large model은 영어만 지원하며, basic model은 다양한 언어를 지원한다&lt;/li&gt;
+      &lt;li&gt;최근 한국어 데이터세트를 &lt;a href=&quot;https://korquad.github.io/&quot;&gt;KorQuAD&lt;/a&gt;.가 LG CNS가 공개하였는데, 클로바에서 BERT-basic을 적용하여 F1 score 87.85를 달성할 수 있음을 보여주었다.&lt;/li&gt;
+      &lt;li&gt;Google 및 LG CNS 연구원님들에게 감사인사를…&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</content><category term="NLP" /><category term="BERT" /><category term="Transfer-learning" /><category term="Transformer" /><summary type="html">BERT에 대한 개념적인 설명</summary></entry><entry><title type="html">우분투 이클립스 설치(Install eclipse in ubuntu for c++)</title><link href="https://moongmoong.github.io/install_eclips_ubuntu/" rel="alternate" type="text/html" title="우분투 이클립스 설치(Install eclipse in ubuntu for c++)" /><published>2019-01-04T09:33:36+09:00</published><updated>2019-01-04T09:33:36+09:00</updated><id>https://moongmoong.github.io/install_eclips_ubuntu</id><content type="html" xml:base="https://moongmoong.github.io/install_eclips_ubuntu/">&lt;h3 id=&quot;오늘은-c-스터디를-위하여-이클립스를-설치해보려-한다&quot;&gt;오늘은 C++ 스터디를 위하여 이클립스를 설치해보려 한다.&lt;/h3&gt;
 &lt;p&gt;원래는 Eclipse가 java에 주로 사용되는 ide로 알고 있었는데 c++ 확장이 가능한 것을 이번에 알게 되었다.&lt;/p&gt;
 
 &lt;p&gt;Eclipse를 설치하기 위해서 &lt;a href=&quot;https://agiantmind.tistory.com/182&quot;&gt;이 블로그&lt;/a&gt;.를 참조하였다.&lt;/p&gt;
@@ -692,43 +806,4 @@ Available values: [1..3].&lt;/li&gt;
     &lt;a href=&quot;http://vignette1.wikia.nocookie.net/naruto/images/1/15/J%C5%ABho_S%C5%8Dshiken.png&quot;&gt;&lt;img src=&quot;http://vignette1.wikia.nocookie.net/naruto/images/1/15/J%C5%ABho_S%C5%8Dshiken.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
     
     &lt;figcaption&gt;Test images&lt;/figcaption&gt;
-&lt;/figure&gt;</content><category term="sample post" /><category term="images" /><category term="test" /><summary type="html">Examples and code for displaying images in posts.</summary></entry><entry><title type="html">Post with Image Feature</title><link href="https://moongmoong.github.io/readability-feature-post/" rel="alternate" type="text/html" title="Post with Image Feature" /><published>2012-05-23T00:00:00+09:00</published><updated>2012-05-23T00:00:00+09:00</updated><id>https://moongmoong.github.io/readability-feature-post</id><content type="html" xml:base="https://moongmoong.github.io/readability-feature-post/">&lt;p&gt;Portland in shoreditch Vice, labore typewriter pariatur hoodie fap sartorial Austin. Pinterest literally occupy Schlitz forage. Odio ad blue bottle vinyl, 90’s narwhal commodo bitters pour-over nostrud. Ugh est hashtag in, fingerstache adipisicing laboris esse Pinterest shabby chic Portland. Shoreditch bicycle rights anim, flexitarian laboris put a bird on it vinyl cupidatat narwhal. Hashtag artisan skateboard, flannel Bushwick nesciunt salvia aute fixie do plaid post-ironic dolor McSweeney’s. Cliche pour-over chambray nulla four loko skateboard sapiente hashtag.&lt;/p&gt;
-
-&lt;p&gt;Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater ullamco quinoa ennui assumenda, sapiente occupy delectus lo-fi. Ea fashion axe Marfa cillum aliquip. Retro Bushwick keytar cliche. Before they sold out sustainable gastropub Marfa readymade, ethical Williamsburg skateboard brunch qui consectetur gentrify semiotics. Mustache cillum irony, fingerstache magna pour-over keffiyeh tousled selfies.&lt;/p&gt;
-
-&lt;h2 id=&quot;cupidatat-90s-lo-fi-authentic-try-hard&quot;&gt;Cupidatat 90’s lo-fi authentic try-hard&lt;/h2&gt;
-
-&lt;p&gt;In pug Portland incididunt mlkshk put a bird on it vinyl quinoa. Terry Richardson shabby chic +1, scenester Tonx excepteur tempor fugiat voluptate fingerstache aliquip nisi next level. Farm-to-table hashtag Truffaut, Odd Future ex meggings gentrify single-origin coffee try-hard 90’s.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Sartorial hoodie&lt;/li&gt;
-  &lt;li&gt;Labore viral forage&lt;/li&gt;
-  &lt;li&gt;Tote bag selvage&lt;/li&gt;
-  &lt;li&gt;DIY exercitation et id ugh tumblr church-key&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Incididunt umami sriracha, ethical fugiat VHS ex assumenda yr irure direct trade. Marfa Truffaut bicycle rights, kitsch placeat Etsy kogi asymmetrical. Beard locavore flexitarian, kitsch photo booth hoodie plaid ethical readymade leggings yr.&lt;/p&gt;
-
-&lt;p&gt;Aesthetic odio dolore, meggings disrupt qui readymade stumptown brunch Terry Richardson pour-over gluten-free. Banksy american apparel in selfies, biodiesel flexitarian organic meh wolf quinoa gentrify banjo kogi. Readymade tofu ex, scenester dolor umami fingerstache occaecat fashion axe Carles jean shorts minim. Keffiyeh fashion axe nisi Godard mlkshk dolore. Lomo you probably haven’t heard of them eu non, Odd Future Truffaut pug keytar meggings McSweeney’s Pinterest cred. Etsy literally aute esse, eu bicycle rights qui meggings fanny pack. Gentrify leggings pug flannel duis.&lt;/p&gt;
-
-&lt;h2 id=&quot;forage-occaecat-cardigan-qui&quot;&gt;Forage occaecat cardigan qui&lt;/h2&gt;
-
-&lt;p&gt;Fashion axe hella gastropub lo-fi kogi 90’s aliquip +1 veniam delectus tousled. Cred sriracha locavore gastropub kale chips, iPhone mollit sartorial. Anim dolore 8-bit, pork belly dolor photo booth aute flannel small batch. Dolor disrupt ennui, tattooed whatever salvia Banksy sartorial roof party selfies raw denim sint meh pour-over. Ennui eu cardigan sint, gentrify iPhone cornhole.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Whatever velit occaecat quis deserunt gastropub, leggings elit tousled roof party 3 wolf moon kogi pug blue bottle ea. Fashion axe shabby chic Austin quinoa pickled laborum bitters next level, disrupt deep v accusamus non fingerstache.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Tote bag asymmetrical elit sunt. Occaecat authentic Marfa, hella McSweeney’s next level irure veniam master cleanse. Sed hoodie letterpress artisan wolf leggings, 3 wolf moon commodo ullamco. Anim occupy ea labore Terry Richardson. Tofu ex master cleanse in whatever pitchfork banh mi, occupy fugiat fanny pack Austin authentic. Magna fugiat 3 wolf moon, labore McSweeney’s sustainable vero consectetur. Gluten-free disrupt enim, aesthetic fugiat jean shorts trust fund keffiyeh magna try-hard.&lt;/p&gt;
-
-&lt;h2 id=&quot;hoodie-duis&quot;&gt;Hoodie Duis&lt;/h2&gt;
-
-&lt;p&gt;Actually salvia consectetur, hoodie duis lomo YOLO sunt sriracha. Aute pop-up brunch farm-to-table odio, salvia irure occaecat. Sriracha small batch literally skateboard. Echo Park nihil hoodie, aliquip forage artisan laboris. Trust fund reprehenderit nulla locavore. Stumptown raw denim kitsch, keffiyeh nulla twee dreamcatcher fanny pack ullamco 90’s pop-up est culpa farm-to-table. Selfies 8-bit do pug odio.&lt;/p&gt;
-
-&lt;h3 id=&quot;thundercats-ho&quot;&gt;Thundercats Ho!&lt;/h3&gt;
-
-&lt;p&gt;Fingerstache thundercats Williamsburg, deep v scenester Banksy ennui vinyl selfies mollit biodiesel duis odio pop-up. Banksy 3 wolf moon try-hard, sapiente enim stumptown deep v ad letterpress. Squid beard brunch, exercitation raw denim yr sint direct trade. Raw denim narwhal id, flannel DIY McSweeney’s seitan. Letterpress artisan bespoke accusamus, meggings laboris consequat Truffaut qui in seitan. Sustainable cornhole Schlitz, twee Cosby sweater banh mi deep v forage letterpress flannel whatever keffiyeh. Sartorial cred irure, semiotics ethical sed blue bottle nihil letterpress.&lt;/p&gt;
-
-&lt;p&gt;Occupy et selvage squid, pug brunch blog nesciunt hashtag mumblecore skateboard yr kogi. Ugh small batch swag four loko. Fap post-ironic qui tote bag farm-to-table american apparel scenester keffiyeh vero, swag non pour-over gentrify authentic pitchfork. Schlitz scenester lo-fi voluptate, tote bag irony bicycle rights pariatur vero Vice freegan wayfarers exercitation nisi shoreditch. Chambray tofu vero sed. Street art swag literally leggings, Cosby sweater mixtape PBR lomo Banksy non in pitchfork ennui McSweeney’s selfies. Odd Future Banksy non authentic.&lt;/p&gt;
-
-&lt;p&gt;Aliquip enim artisan dolor post-ironic. Pug tote bag Marfa, deserunt pour-over Portland wolf eu odio intelligentsia american apparel ugh ea. Sunt viral et, 3 wolf moon gastropub pug id. Id fashion axe est typewriter, mlkshk Portland art party aute brunch. Sint pork belly Cosby sweater, deep v mumblecore kitsch american apparel. Try-hard direct trade tumblr sint skateboard. Adipisicing bitters excepteur biodiesel, pickled gastropub aute veniam.&lt;/p&gt;</content><category term="sample post" /><category term="readability" /><category term="test" /><category term="image" /><category term="feature" /><summary type="html">A ton of text to test readability with image feature.</summary></entry></feed>
+&lt;/figure&gt;</content><category term="sample post" /><category term="images" /><category term="test" /><summary type="html">Examples and code for displaying images in posts.</summary></entry></feed>
