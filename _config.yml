@@ -5,7 +5,7 @@ description:        "I'm a Machine Learning enginear."
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/tf_logo.png'
-background:         'assets/img/placeholder-bridge.jpg'
+background:         'assets/img/placeholder-city.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
 url:                https://moongmoong.github.io
