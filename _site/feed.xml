@@ -1,4 +1,173 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://moongmoong.github.io/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="https://moongmoong.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://moongmoong.github.io/" rel="alternate" type="text/html" /><updated>2019-01-04T21:10:26+09:00</updated><id>https://moongmoong.github.io/</id><title type="html">Jaeseok Kim blog</title><subtitle>I'm a Machine Learning enginear.</subtitle><entry><title type="html">첫글</title><link href="https://moongmoong.github.io/your-title/" rel="alternate" type="text/html" title="첫글" /><published>2019-01-04T07:26:41+09:00</published><updated>2019-01-04T07:26:41+09:00</updated><id>https://moongmoong.github.io/your-title</id><content type="html" xml:base="https://moongmoong.github.io/your-title/">&lt;p&gt;aㅁㅁ&lt;/p&gt;</content><summary type="html">Minimal, one column Jekyll theme for your blog.</summary></entry><entry><title type="html">Moon Jekyll Theme</title><link href="https://moongmoong.github.io/moon-theme/" rel="alternate" type="text/html" title="Moon Jekyll Theme" /><published>2016-04-06T00:00:00+09:00</published><updated>2016-04-06T00:00:00+09:00</updated><id>https://moongmoong.github.io/moon-theme</id><content type="html" xml:base="https://moongmoong.github.io/moon-theme/">&lt;p&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png&quot; alt=&quot;Moon Homepage&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://moongmoong.github.io/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="https://moongmoong.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://moongmoong.github.io/" rel="alternate" type="text/html" /><updated>2019-01-04T22:23:40+09:00</updated><id>https://moongmoong.github.io/</id><title type="html">Jaeseok Kim blog</title><subtitle>I'm a Machine Learning enginear.</subtitle><entry><title type="html">우분투 이클립스 설치(Install eclipse in ubuntu for c++)</title><link href="https://moongmoong.github.io/install_eclips_ubuntu/" rel="alternate" type="text/html" title="우분투 이클립스 설치(Install eclipse in ubuntu for c++)" /><published>2019-01-04T09:33:36+09:00</published><updated>2019-01-04T09:33:36+09:00</updated><id>https://moongmoong.github.io/install_eclips_ubuntu</id><content type="html" xml:base="https://moongmoong.github.io/install_eclips_ubuntu/">&lt;h3 id=&quot;오늘은-c-스터디를-위하여-이클립스를-설치해보려-한다&quot;&gt;오늘은 C++ 스터디를 위하여 이클립스를 설치해보려 한다.&lt;/h3&gt;
+&lt;p&gt;원래는 Eclipse가 java에 주로 사용되는 ide로 알고 있었는데 c++ 확장이 가능한 것을 이번에 알게 되었다.&lt;/p&gt;
+
+&lt;p&gt;Eclipse를 설치하기 위해서 &lt;a href=&quot;https://agiantmind.tistory.com/182&quot;&gt;이 블로그&lt;/a&gt;.를 참조하였다.&lt;/p&gt;
+
+&lt;p&gt;사실상 거의 복붙이긴 하지만.. 일단 작성해보자
+원본이 아주 잘 설명해 주었으니 순서만 정리한다.&lt;/p&gt;
+
+&lt;h3 id=&quot;설치-순서는-다음과-같다&quot;&gt;설치 순서는 다음과 같다.&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;JDK(Java Development Kit) 설치&lt;/li&gt;
+  &lt;li&gt;C/C++ 개발 관련 패키지 설치&lt;/li&gt;
+  &lt;li&gt;Eclipse 설치&lt;/li&gt;
+  &lt;li&gt;Eclipse CDT 설치&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;h4 id=&quot;jdk-설치&quot;&gt;JDK 설치&lt;/h4&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;h4 id=&quot;cc-개발-관련-패키지-설치&quot;&gt;C/C++ 개발 관련 패키지 설치&lt;/h4&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo -s
+sudo apt-get install build-essential
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;h4 id=&quot;eclipse-설치&quot;&gt;Eclipse 설치&lt;/h4&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;운영체제 아키텍쳐 확인
+	uname -m&lt;/p&gt;
+
+&lt;table rules=&quot;groups&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;32비트&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;64비트&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;i386, i486, i586, i686, x86&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;amd64, x86_64&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;해당 정보에 맞춰서 Linux version으로
+&lt;a href=&quot;https://www.eclipse.org/&quot;&gt;Eclipse 공식 사이트&lt;/a&gt;.에 접속하여 
+“Eclipse IDE for C/C++ Developers” 다운로드&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;다운받은 경로로 이동 후 압축 헤제&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  tar xvzf (다운받은파일명)
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Eclipse 폴더를 /opt 폴더로 이동&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  sudo mv eclipse /opt
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;터미널 실행설정&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; sudo vi /usr/bin/eclipse
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;혹은&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo gedit /usr/bin/eclipse
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;여기에 다음을 작성한다.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#! /bin/sh&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;ECLIPSE_HOME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;/opt/eclipse
+&lt;span class=&quot;nv&quot;&gt;$ECLIPSE_HOME&lt;/span&gt;/eclipse &lt;span class=&quot;nv&quot;&gt;$*&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;권한 설정을 한다&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo chmod 755 /usr/bin/eclipse
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;X 윈도우 바로가기 설정을 위해 다음 중 하나로&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo vi /usr/share/applications/eclipse.desktop
+sudo gedit /usr/share/applications/eclipse.desktop
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;아래를 작성한다.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Desktop Entry]
+Encoding=UTF-8
+Name=Eclipse
+Comment=Eclipse IDE
+Exec=eclipse
+Icon=/opt/eclipse/icon.xpm
+Terminal=false
+Type=Application
+Categories=Development
+StartupNotif=true
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;#### Eclipse CDT 설치&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;지금부터 좀 했갈릴 수 있다.. 여지간하면 직접 이미지 도용은 안하는게 좋겠지만.. 
+추후에 문제가 될 것 같으면 이미지 수정하도록 하겠습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img1.daumcdn.net/thumb/R1920x0/?fname=http%3A%2F%2Fcfile27.uf.tistory.com%2Fimage%2F245DBB4A5938F77C0BFDDA&quot; alt=&quot;텍스트&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img1.daumcdn.net/thumb/R1920x0/?fname=http%3A%2F%2Fcfile29.uf.tistory.com%2Fimage%2F22400F4A5938F77D17E737&quot; alt=&quot;텍스트&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;리스트에 없으면 Add 누르고&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;#http://download.eclipse.org/tools/cdt/releases/9.2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;직접써줘야한다.. 복붙하세요.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img1.daumcdn.net/thumb/R1920x0/?fname=http%3A%2F%2Fcfile23.uf.tistory.com%2Fimage%2F2279A44E5938F7AD38D4E0&quot; alt=&quot;텍스트&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;위에 두가지 다 설치(9.6버전은 한개 더 있는데 잘 모르겠다.)&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;#### 샘플 코드&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;샘플 프로젝트 만들기는 다음처럼 하면되는데,&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img1.daumcdn.net/thumb/R1920x0/?fname=http%3A%2F%2Fcfile4.uf.tistory.com%2Fimage%2F267C7F485938F7F5247A5E&quot; alt=&quot;텍스트&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;실제로 프로그램 짤때는 2번째 이미지에서 선택할 때,  &lt;strong&gt;Empty project&lt;/strong&gt;를 선택하자&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img1.daumcdn.net/thumb/R1920x0/?fname=http%3A%2F%2Fcfile3.uf.tistory.com%2Fimage%2F234498485938F7F60BEEDA&quot; alt=&quot;텍스트&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;C++은 빌드를 해줘야한다. (최근 python만 쓰다보니 이걸잊었었는데..)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img1.daumcdn.net/thumb/R1920x0/?fname=http%3A%2F%2Fcfile30.uf.tistory.com%2Fimage%2F2776814E5938F812260DE2&quot; alt=&quot;텍스트&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hello world를 consol에서 확인할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://img1.daumcdn.net/thumb/R1920x0/?fname=http%3A%2F%2Fcfile25.uf.tistory.com%2Fimage%2F2563C64D5938F82A0E0C98&quot; alt=&quot;텍스트&quot; /&gt;&lt;/p&gt;</content><category term="Ubuntu" /><category term="c++" /><category term="eclipse" /><summary type="html">우분투에서 이클립스를 설치하는 방법</summary></entry><entry><title type="html">첫글</title><link href="https://moongmoong.github.io/your-title/" rel="alternate" type="text/html" title="첫글" /><published>2019-01-04T07:26:41+09:00</published><updated>2019-01-04T07:26:41+09:00</updated><id>https://moongmoong.github.io/your-title</id><content type="html" xml:base="https://moongmoong.github.io/your-title/">&lt;p&gt;aㅁㅁ&lt;/p&gt;</content><summary type="html">Minimal, one column Jekyll theme for your blog.</summary></entry><entry><title type="html">Moon Jekyll Theme</title><link href="https://moongmoong.github.io/moon-theme/" rel="alternate" type="text/html" title="Moon Jekyll Theme" /><published>2016-04-06T00:00:00+09:00</published><updated>2016-04-06T00:00:00+09:00</updated><id>https://moongmoong.github.io/moon-theme</id><content type="html" xml:base="https://moongmoong.github.io/moon-theme/">&lt;p&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png&quot; alt=&quot;Moon Homepage&quot; /&gt;&lt;/p&gt;
 
 &lt;center&gt;&lt;b&gt;Moon&lt;/b&gt; is a minimal, one column jekyll theme.&lt;/center&gt;
 
