@@ -1,4 +1,82 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://moongmoong.github.io/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="https://moongmoong.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://moongmoong.github.io/" rel="alternate" type="text/html" /><updated>2019-01-05T00:03:03+09:00</updated><id>https://moongmoong.github.io/</id><title type="html">Jaeseok Kim blog</title><subtitle>I'm a Machine Learning enginear.</subtitle><entry><title type="html">[NLP] BERT란 무엇인가?</title><link href="https://moongmoong.github.io/Bert/" rel="alternate" type="text/html" title="[NLP] BERT란 무엇인가?" /><published>2019-01-04T11:33:00+09:00</published><updated>2019-01-04T11:33:00+09:00</updated><id>https://moongmoong.github.io/Bert</id><content type="html" xml:base="https://moongmoong.github.io/Bert/">&lt;h2 id=&quot;bert에-대해-알아보자&quot;&gt;BERT에 대해 알아보자&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://moongmoong.github.io/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="https://moongmoong.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://moongmoong.github.io/" rel="alternate" type="text/html" /><updated>2019-01-07T17:07:01+09:00</updated><id>https://moongmoong.github.io/</id><title type="html">Jaeseok Kim blog</title><subtitle>I'm a Machine Learning enginear.</subtitle><entry><title type="html">Image Resize</title><link href="https://moongmoong.github.io/image-resize/" rel="alternate" type="text/html" title="Image Resize" /><published>2019-01-07T00:00:00+09:00</published><updated>2019-01-07T00:00:00+09:00</updated><id>https://moongmoong.github.io/image-resize</id><content type="html" xml:base="https://moongmoong.github.io/image-resize/">&lt;hr /&gt;
+&lt;p&gt;title: 우분투 이미지 리사이즈 (Ubuntu18.04 Ubuntu16.04 image resize)
+layout: post
+date: ‘2019-01-07 09:33:36’
+excerpt: 마크다운에 이미지를 쉽게 올리자
+tag:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;markdown&lt;/li&gt;
+  &lt;li&gt;image&lt;/li&gt;
+  &lt;li&gt;github
+categories:&lt;/li&gt;
+  &lt;li&gt;ubuntu&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;이미지를-리사이즈하자&quot;&gt;이미지를 리사이즈하자.&lt;/h2&gt;
+
+&lt;p&gt;쉽다.. 다음을 따라하자.
+필요한 프로그램 설치&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install imagemagick
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;사용 예시이다. 
+위는 source파일을 50퍼센트로 작게 리사이즈해서 dest에 저장.
+아래는 source파일을 1024*768 사이즈의 이미지로 리사이즈해서 dest.jpg에 저장
+개인적으로는 %시 사이즈 끝자리가 제어되지 않아서 아래의 방법을 선호한다.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;convert  -resize 50% source.png dest.jpg
+convert -resize 1024X768  source.png dest.jpg
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><summary type="html">title: 우분투 이미지 리사이즈 (Ubuntu18.04 Ubuntu16.04 image resize)
+layout: post
+date: ‘2019-01-07 09:33:36’
+excerpt: 마크다운에 이미지를 쉽게 올리자
+tag:
+
+  markdown
+  image
+  github
+categories:
+  ubuntu</summary></entry><entry><title type="html">Image Png2ico</title><link href="https://moongmoong.github.io/image-png2ico/" rel="alternate" type="text/html" title="Image Png2ico" /><published>2019-01-07T00:00:00+09:00</published><updated>2019-01-07T00:00:00+09:00</updated><id>https://moongmoong.github.io/image-png2ico</id><content type="html" xml:base="https://moongmoong.github.io/image-png2ico/">&lt;hr /&gt;
+&lt;p&gt;title: 우분투 PNG파일 ico파일로 변환 (Ubuntu18.04 Ubuntu16.04 PNG image convert to ico file)
+layout: post
+date: ‘2019-01-07 09:33:36’
+excerpt: PNG파일을 ico 파일로 바꾸자
+tag:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;markdown&lt;/li&gt;
+  &lt;li&gt;image&lt;/li&gt;
+  &lt;li&gt;github
+categories:&lt;/li&gt;
+  &lt;li&gt;ubuntu&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;이미지의-형식을-바꿔보&quot;&gt;이미지의 형식을 바꿔보.&lt;/h2&gt;
+
+&lt;p&gt;쉽다.. 다음을 따라하자.
+필요한 프로그램 설치&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;apt-get install icoutils
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;사용 예시이다.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;icotool -c -o output.ico input.png
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content><summary type="html">title: 우분투 PNG파일 ico파일로 변환 (Ubuntu18.04 Ubuntu16.04 PNG image convert to ico file)
+layout: post
+date: ‘2019-01-07 09:33:36’
+excerpt: PNG파일을 ico 파일로 바꾸자
+tag:
+
+  markdown
+  image
+  github
+categories:
+  ubuntu</summary></entry><entry><title type="html">[NLP] BERT란 무엇인가?</title><link href="https://moongmoong.github.io/Bert/" rel="alternate" type="text/html" title="[NLP] BERT란 무엇인가?" /><published>2019-01-04T11:33:00+09:00</published><updated>2019-01-04T11:33:00+09:00</updated><id>https://moongmoong.github.io/Bert</id><content type="html" xml:base="https://moongmoong.github.io/Bert/">&lt;h2 id=&quot;bert에-대해-알아보자&quot;&gt;BERT에 대해 알아보자&lt;/h2&gt;
 
 &lt;p&gt;최근 NLP분야에서 가장 압도적인 성능을 보이는&lt;/p&gt;
 
@@ -281,7 +359,7 @@ StartupNotif=true
 
 &lt;p&gt;Hello world를 consol에서 확인할 수 있다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://img1.daumcdn.net/thumb/R1920x0/?fname=http%3A%2F%2Fcfile25.uf.tistory.com%2Fimage%2F2563C64D5938F82A0E0C98&quot; alt=&quot;텍스트&quot; /&gt;&lt;/p&gt;</content><category term="Ubuntu" /><category term="c++" /><category term="eclipse" /><summary type="html">우분투에서 이클립스를 설치하는 방법</summary></entry><entry><title type="html">마크다운 이미지 업로드 팁 (markdown image upload tip)</title><link href="https://moongmoong.github.io/image-up/" rel="alternate" type="text/html" title="마크다운 이미지 업로드 팁 (markdown image upload tip)" /><published>2019-01-04T09:33:36+09:00</published><updated>2019-01-04T09:33:36+09:00</updated><id>https://moongmoong.github.io/image-up</id><content type="html" xml:base="https://moongmoong.github.io/image-up/">&lt;h2 id=&quot;이미지-링크를-쉽게-얻어보자&quot;&gt;이미지 링크를 쉽게 얻어보자&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://img1.daumcdn.net/thumb/R1920x0/?fname=http%3A%2F%2Fcfile25.uf.tistory.com%2Fimage%2F2563C64D5938F82A0E0C98&quot; alt=&quot;텍스트&quot; /&gt;&lt;/p&gt;</content><category term="Ubuntu" /><category term="c++" /><category term="eclipse" /><summary type="html">우분투에서 이클립스를 설치하는 방법</summary></entry><entry><title type="html">마크다운 이미지 업로드 팁 (markdown image upload tip)</title><link href="https://moongmoong.github.io/image-upload/" rel="alternate" type="text/html" title="마크다운 이미지 업로드 팁 (markdown image upload tip)" /><published>2019-01-04T09:33:36+09:00</published><updated>2019-01-04T09:33:36+09:00</updated><id>https://moongmoong.github.io/image-upload</id><content type="html" xml:base="https://moongmoong.github.io/image-upload/">&lt;h2 id=&quot;이미지-링크를-쉽게-얻어보자&quot;&gt;이미지 링크를 쉽게 얻어보자&lt;/h2&gt;
 
 &lt;p&gt;마크다운 이미지를 업로드 할 때 쉽게 올리는 방법을 &lt;a href=&quot;https://ahribori.com/article/5a03bcfd6c9eef13d882e29a&quot;&gt;다른 블로그&lt;/a&gt;.를 통해 알게 되었다.&lt;/p&gt;
 
@@ -294,7 +372,7 @@ StartupNotif=true
 &lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/26134358/50690730-c0974a00-1071-11e9-8e75-eb83b93fb615.png&quot; alt=&quot;temp02&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;아무 레포에서 수행이 가능하고, 최종 등록을 하지 않아도 된다.
-지금 이미지도 이렇게 삽입하였다.&lt;/p&gt;</content><category term="markdown" /><category term="image" /><category term="github" /><summary type="html">마크다운에 이미지를 쉽게 올리자</summary></entry><entry><title type="html">첫글</title><link href="https://moongmoong.github.io/your-title/" rel="alternate" type="text/html" title="첫글" /><published>2019-01-04T07:26:41+09:00</published><updated>2019-01-04T07:26:41+09:00</updated><id>https://moongmoong.github.io/your-title</id><content type="html" xml:base="https://moongmoong.github.io/your-title/">&lt;p&gt;aㅁㅁ&lt;/p&gt;</content><summary type="html">Minimal, one column Jekyll theme for your blog.</summary></entry><entry><title type="html">Moon Jekyll Theme</title><link href="https://moongmoong.github.io/moon-theme/" rel="alternate" type="text/html" title="Moon Jekyll Theme" /><published>2016-04-06T00:00:00+09:00</published><updated>2016-04-06T00:00:00+09:00</updated><id>https://moongmoong.github.io/moon-theme</id><content type="html" xml:base="https://moongmoong.github.io/moon-theme/">&lt;p&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png&quot; alt=&quot;Moon Homepage&quot; /&gt;&lt;/p&gt;
+지금 이미지도 이렇게 삽입하였다.&lt;/p&gt;</content><category term="markdown" /><category term="image" /><category term="github" /><summary type="html">마크다운에 이미지를 쉽게 올리자</summary></entry><entry><title type="html">Moon Jekyll Theme</title><link href="https://moongmoong.github.io/moon-theme/" rel="alternate" type="text/html" title="Moon Jekyll Theme" /><published>2016-04-06T00:00:00+09:00</published><updated>2016-04-06T00:00:00+09:00</updated><id>https://moongmoong.github.io/moon-theme</id><content type="html" xml:base="https://moongmoong.github.io/moon-theme/">&lt;p&gt;&lt;img src=&quot;https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png&quot; alt=&quot;Moon Homepage&quot; /&gt;&lt;/p&gt;
 
 &lt;center&gt;&lt;b&gt;Moon&lt;/b&gt; is a minimal, one column jekyll theme.&lt;/center&gt;
 
@@ -721,89 +799,4 @@ mathjax: true
       &lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Syntax_highlighting&quot;&gt;http://en.wikipedia.org/wiki/Syntax_highlighting&lt;/a&gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><category term="sample post" /><category term="code" /><category term="highlighting" /><summary type="html">Demo post displaying the various ways of highlighting code in Markdown.</summary></entry><entry><title type="html">A Post with Images</title><link href="https://moongmoong.github.io/sample-post-images/" rel="alternate" type="text/html" title="A Post with Images" /><published>2013-05-22T00:00:00+09:00</published><updated>2013-05-22T00:00:00+09:00</updated><id>https://moongmoong.github.io/sample-post-images</id><content type="html" xml:base="https://moongmoong.github.io/sample-post-images/">&lt;p&gt;Here are some examples of what a post with images might look like. If you want to display two or three images next to each other responsively use &lt;code class=&quot;highlighter-rouge&quot;&gt;figure&lt;/code&gt; with the appropriate &lt;code class=&quot;highlighter-rouge&quot;&gt;class&lt;/code&gt;. Each instance of &lt;code class=&quot;highlighter-rouge&quot;&gt;figure&lt;/code&gt; is auto-numbered and displayed in the caption.&lt;/p&gt;
-
-&lt;h3 id=&quot;figures-for-images-or-video&quot;&gt;Figures (for images or video)&lt;/h3&gt;
-
-&lt;h4 id=&quot;one-up&quot;&gt;One Up&lt;/h4&gt;
-
-&lt;figure&gt;
-	&lt;a href=&quot;http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_b.jpg&quot;&gt;&lt;img src=&quot;http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_c.jpg&quot; /&gt;&lt;/a&gt;
-	&lt;figcaption&gt;&lt;a href=&quot;http://www.flickr.com/photos/80901381@N04/7758832526/&quot; title=&quot;Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr&quot;&gt;Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr&lt;/a&gt;.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Vero laborum commodo occupy. Semiotics voluptate mumblecore pug. Cosby sweater ullamco quinoa ennui assumenda, sapiente occupy delectus lo-fi. Ea fashion axe Marfa cillum aliquip. Retro Bushwick keytar cliche. Before they sold out sustainable gastropub Marfa readymade, ethical Williamsburg skateboard brunch qui consectetur gentrify semiotics. Mustache cillum irony, fingerstache magna pour-over keffiyeh tousled selfies.&lt;/p&gt;
-
-&lt;h4 id=&quot;two-up&quot;&gt;Two Up&lt;/h4&gt;
-
-&lt;p&gt;Apply the &lt;code class=&quot;highlighter-rouge&quot;&gt;half&lt;/code&gt; class like so to display two images side by side that share the same caption.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;figure&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;half&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/images/image-filename-1-large.jpg&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/images/image-filename-1.jpg&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/images/image-filename-2-large.jpg&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/images/image-filename-2.jpg&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;figcaption&amp;gt;&lt;/span&gt;Caption describing these two images.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/figcaption&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/figure&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;And you’ll get something that looks like this:&lt;/p&gt;
-
-&lt;figure class=&quot;half&quot;&gt;
-	&lt;a href=&quot;http://placehold.it/1200x600.JPG&quot;&gt;&lt;img src=&quot;http://placehold.it/600x300.jpg&quot; /&gt;&lt;/a&gt;
-	&lt;a href=&quot;http://placehold.it/1200x600.jpeg&quot;&gt;&lt;img src=&quot;http://placehold.it/600x300.jpg&quot; /&gt;&lt;/a&gt;
-	&lt;figcaption&gt;Two images.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;h4 id=&quot;three-up&quot;&gt;Three Up&lt;/h4&gt;
-
-&lt;p&gt;Apply the &lt;code class=&quot;highlighter-rouge&quot;&gt;third&lt;/code&gt; class like so to display three images side by side that share the same caption.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;figure&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;third&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-	&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/images/image-filename-1.jpg&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-	&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/images/image-filename-2.jpg&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-	&lt;span class=&quot;nt&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/images/image-filename-3.jpg&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-	&lt;span class=&quot;nt&quot;&gt;&amp;lt;figcaption&amp;gt;&lt;/span&gt;Caption describing these three images.&lt;span class=&quot;nt&quot;&gt;&amp;lt;/figcaption&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/figure&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;And you’ll get something that looks like this:&lt;/p&gt;
-
-&lt;figure class=&quot;third&quot;&gt;
-	&lt;img src=&quot;http://placehold.it/600x300.jpg&quot; /&gt;
-	&lt;img src=&quot;http://placehold.it/600x300.jpg&quot; /&gt;
-	&lt;img src=&quot;http://placehold.it/600x300.jpg&quot; /&gt;
-	&lt;figcaption&gt;Three images.&lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;h3 id=&quot;alternative-way&quot;&gt;Alternative way&lt;/h3&gt;
-
-&lt;p&gt;Another way to achieve the same result is to include &lt;code class=&quot;highlighter-rouge&quot;&gt;gallery&lt;/code&gt; Liquid template. In this case you
-don’t have to write any HTML tags – just copy a small block of code, adjust the parameters (see below)
-and fill the block with any number of links to images. You can mix relative and external links.&lt;/p&gt;
-
-&lt;p&gt;Here is the block you might want to use:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-liquid&quot; data-lang=&quot;liquid&quot;&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;capture&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;images&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-	http://vignette2.wikia.nocookie.net/naruto/images/9/97/Hinata.png
-	http://vignette4.wikia.nocookie.net/naruto/images/7/79/Hinata_Part_II.png
-	http://vignette1.wikia.nocookie.net/naruto/images/1/15/J%C5%ABho_S%C5%8Dshiken.png
-&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;endcapture&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;gallery&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;images&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;images&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;caption&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Test images&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;cols&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Parameters:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;caption&lt;/code&gt;: Sets the caption under the gallery (see &lt;code class=&quot;highlighter-rouge&quot;&gt;figcaption&lt;/code&gt; HTML tag above);&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cols&lt;/code&gt;: Sets the number of columns of the gallery.
-Available values: [1..3].&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It will look something like this:&lt;/p&gt;
-
-&lt;figure class=&quot;third&quot;&gt;
-    
-    &lt;a href=&quot;http://vignette2.wikia.nocookie.net/naruto/images/9/97/Hinata.png&quot;&gt;&lt;img src=&quot;http://vignette2.wikia.nocookie.net/naruto/images/9/97/Hinata.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
-    
-    &lt;a href=&quot;http://vignette4.wikia.nocookie.net/naruto/images/7/79/Hinata_Part_II.png&quot;&gt;&lt;img src=&quot;http://vignette4.wikia.nocookie.net/naruto/images/7/79/Hinata_Part_II.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
-    
-    &lt;a href=&quot;http://vignette1.wikia.nocookie.net/naruto/images/1/15/J%C5%ABho_S%C5%8Dshiken.png&quot;&gt;&lt;img src=&quot;http://vignette1.wikia.nocookie.net/naruto/images/1/15/J%C5%ABho_S%C5%8Dshiken.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
-    
-    &lt;figcaption&gt;Test images&lt;/figcaption&gt;
-&lt;/figure&gt;</content><category term="sample post" /><category term="images" /><category term="test" /><summary type="html">Examples and code for displaying images in posts.</summary></entry></feed>
+&lt;/div&gt;</content><category term="sample post" /><category term="code" /><category term="highlighting" /><summary type="html">Demo post displaying the various ways of highlighting code in Markdown.</summary></entry></feed>

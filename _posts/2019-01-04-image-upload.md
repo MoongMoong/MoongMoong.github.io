@@ -8,7 +8,7 @@ tag:
 - image
 - github
 categories:
-- blog_tutorial
+- blog_tips
 ---
 
 ## 이미지 링크를 쉽게 얻어보자
