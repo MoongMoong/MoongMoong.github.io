@@ -9,6 +9,7 @@ tag:
 - github
 categories:
 - ubuntu
+---
 
 ## 이미지를 리사이즈하자.
 

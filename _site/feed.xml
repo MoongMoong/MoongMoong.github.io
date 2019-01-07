@@ -1,18 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://moongmoong.github.io/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="https://moongmoong.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://moongmoong.github.io/" rel="alternate" type="text/html" /><updated>2019-01-07T17:07:01+09:00</updated><id>https://moongmoong.github.io/</id><title type="html">Jaeseok Kim blog</title><subtitle>I'm a Machine Learning enginear.</subtitle><entry><title type="html">Image Resize</title><link href="https://moongmoong.github.io/image-resize/" rel="alternate" type="text/html" title="Image Resize" /><published>2019-01-07T00:00:00+09:00</published><updated>2019-01-07T00:00:00+09:00</updated><id>https://moongmoong.github.io/image-resize</id><content type="html" xml:base="https://moongmoong.github.io/image-resize/">&lt;hr /&gt;
-&lt;p&gt;title: 우분투 이미지 리사이즈 (Ubuntu18.04 Ubuntu16.04 image resize)
-layout: post
-date: ‘2019-01-07 09:33:36’
-excerpt: 마크다운에 이미지를 쉽게 올리자
-tag:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;markdown&lt;/li&gt;
-  &lt;li&gt;image&lt;/li&gt;
-  &lt;li&gt;github
-categories:&lt;/li&gt;
-  &lt;li&gt;ubuntu&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;이미지를-리사이즈하자&quot;&gt;이미지를 리사이즈하자.&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://moongmoong.github.io/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="https://moongmoong.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://moongmoong.github.io/" rel="alternate" type="text/html" /><updated>2019-01-07T17:25:49+09:00</updated><id>https://moongmoong.github.io/</id><title type="html">Jaeseok Kim blog</title><subtitle>I'm a Machine Learning enginear.</subtitle><entry><title type="html">우분투 이미지 리사이즈 (Ubuntu18.04 Ubuntu16.04 image resize)</title><link href="https://moongmoong.github.io/image-resize/" rel="alternate" type="text/html" title="우분투 이미지 리사이즈 (Ubuntu18.04 Ubuntu16.04 image resize)" /><published>2019-01-07T09:33:36+09:00</published><updated>2019-01-07T09:33:36+09:00</updated><id>https://moongmoong.github.io/image-resize</id><content type="html" xml:base="https://moongmoong.github.io/image-resize/">&lt;h2 id=&quot;이미지를-리사이즈하자&quot;&gt;이미지를 리사이즈하자.&lt;/h2&gt;
 
 &lt;p&gt;쉽다.. 다음을 따라하자.
 필요한 프로그램 설치&lt;/p&gt;
@@ -29,31 +15,7 @@ categories:&lt;/li&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;convert  -resize 50% source.png dest.jpg
 convert -resize 1024X768  source.png dest.jpg
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content><summary type="html">title: 우분투 이미지 리사이즈 (Ubuntu18.04 Ubuntu16.04 image resize)
-layout: post
-date: ‘2019-01-07 09:33:36’
-excerpt: 마크다운에 이미지를 쉽게 올리자
-tag:
-
-  markdown
-  image
-  github
-categories:
-  ubuntu</summary></entry><entry><title type="html">Image Png2ico</title><link href="https://moongmoong.github.io/image-png2ico/" rel="alternate" type="text/html" title="Image Png2ico" /><published>2019-01-07T00:00:00+09:00</published><updated>2019-01-07T00:00:00+09:00</updated><id>https://moongmoong.github.io/image-png2ico</id><content type="html" xml:base="https://moongmoong.github.io/image-png2ico/">&lt;hr /&gt;
-&lt;p&gt;title: 우분투 PNG파일 ico파일로 변환 (Ubuntu18.04 Ubuntu16.04 PNG image convert to ico file)
-layout: post
-date: ‘2019-01-07 09:33:36’
-excerpt: PNG파일을 ico 파일로 바꾸자
-tag:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;markdown&lt;/li&gt;
-  &lt;li&gt;image&lt;/li&gt;
-  &lt;li&gt;github
-categories:&lt;/li&gt;
-  &lt;li&gt;ubuntu&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;이미지의-형식을-바꿔보&quot;&gt;이미지의 형식을 바꿔보.&lt;/h2&gt;
+&lt;/div&gt;</content><category term="markdown" /><category term="image" /><category term="github" /><summary type="html">마크다운에 이미지를 쉽게 올리자</summary></entry><entry><title type="html">우분투 PNG파일 ico파일로 변환 (Ubuntu18.04 Ubuntu16.04 PNG image convert to ico file)</title><link href="https://moongmoong.github.io/image-png2ico/" rel="alternate" type="text/html" title="우분투 PNG파일 ico파일로 변환 (Ubuntu18.04 Ubuntu16.04 PNG image convert to ico file)" /><published>2019-01-07T09:33:36+09:00</published><updated>2019-01-07T09:33:36+09:00</updated><id>https://moongmoong.github.io/image-png2ico</id><content type="html" xml:base="https://moongmoong.github.io/image-png2ico/">&lt;h2 id=&quot;이미지의-형식을-바꿔보자&quot;&gt;이미지의 형식을 바꿔보자.&lt;/h2&gt;
 
 &lt;p&gt;쉽다.. 다음을 따라하자.
 필요한 프로그램 설치&lt;/p&gt;
@@ -66,17 +28,7 @@ categories:&lt;/li&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;icotool -c -o output.ico input.png
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</content><summary type="html">title: 우분투 PNG파일 ico파일로 변환 (Ubuntu18.04 Ubuntu16.04 PNG image convert to ico file)
-layout: post
-date: ‘2019-01-07 09:33:36’
-excerpt: PNG파일을 ico 파일로 바꾸자
-tag:
-
-  markdown
-  image
-  github
-categories:
-  ubuntu</summary></entry><entry><title type="html">[NLP] BERT란 무엇인가?</title><link href="https://moongmoong.github.io/Bert/" rel="alternate" type="text/html" title="[NLP] BERT란 무엇인가?" /><published>2019-01-04T11:33:00+09:00</published><updated>2019-01-04T11:33:00+09:00</updated><id>https://moongmoong.github.io/Bert</id><content type="html" xml:base="https://moongmoong.github.io/Bert/">&lt;h2 id=&quot;bert에-대해-알아보자&quot;&gt;BERT에 대해 알아보자&lt;/h2&gt;
+&lt;/div&gt;</content><category term="markdown" /><category term="image" /><category term="github" /><summary type="html">PNG파일을 ico 파일로 바꾸자</summary></entry><entry><title type="html">[NLP] BERT란 무엇인가?</title><link href="https://moongmoong.github.io/Bert/" rel="alternate" type="text/html" title="[NLP] BERT란 무엇인가?" /><published>2019-01-04T11:33:00+09:00</published><updated>2019-01-04T11:33:00+09:00</updated><id>https://moongmoong.github.io/Bert</id><content type="html" xml:base="https://moongmoong.github.io/Bert/">&lt;h2 id=&quot;bert에-대해-알아보자&quot;&gt;BERT에 대해 알아보자&lt;/h2&gt;
 
 &lt;p&gt;최근 NLP분야에서 가장 압도적인 성능을 보이는&lt;/p&gt;
 
