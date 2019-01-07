@@ -13,13 +13,13 @@ categories:
 
 ## 이미지의 형식을 바꿔보자.
 
-쉽다.. 다음을 따라하자.\
-필요한 프로그램 설치\
+쉽다.. 다음을 따라하자.  
+필요한 프로그램 설치  
 
 	apt-get install icoutils
 
 
-사용 예시이다. \
+사용 예시이다.  
 	
 	icotool -c -o output.ico input.png
 
