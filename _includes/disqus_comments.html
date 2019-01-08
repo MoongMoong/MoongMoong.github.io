@@ -1,19 +1,36 @@
 {% if site.disqus_shortname %}
-    <script type="text/javascript">
-        var disqus_shortname = '{{ site.disqus_shortname }}';
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            (document.getElementsByCategoryName('head')[0] || document.getElementsByCategoryName('body')[0]).appendChild(dsq);
-        })();
-        (function () {
-            var s = document.createElement('script'); s.async = true;
-            s.type = 'text/javascript';
-            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-            (document.getElementsByCategoryName('HEAD')[0] || document.getElementsByCategoryName('BODY')[0]).appendChild(s);
-        }());
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <!--<script type="text/javascript">-->
+        <!--var disqus_shortname = '{{ site.disqus_shortname }}';-->
+        <!--(function() {-->
+            <!--var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;-->
+            <!--dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';-->
+            <!--(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);-->
+            <!--(document.getElementsByCategoryName('head')[0] || document.getElementsByCategoryName('body')[0]).appendChild(dsq);-->
+        <!--})();-->
+        <!--(function () {-->
+            <!--var s = document.createElement('script'); s.async = true;-->
+            <!--s.type = 'text/javascript';-->
+            <!--s.src = '//' + disqus_shortname + '.disqus.com/count.js';-->
+            <!--(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);-->
+            <!--(document.getElementsByCategoryName('HEAD')[0] || document.getElementsByCategoryName('BODY')[0]).appendChild(s);-->
+        <!--}());-->
+    <!--</script>-->
+    <!--<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>-->
+
+    <div id="lv-container" data-id="city" data-uid="MTAyMC80MjAzNi8xODU4Mw==">
+        <script type="text/javascript">
+       (function(d, s) {
+           var j, e = d.getElementsByTagName(s)[0];
+
+           if (typeof LivereTower === 'function') { return; }
+
+           j = d.createElement(s);
+           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+           j.async = true;
+
+           e.parentNode.insertBefore(j, e);
+       })(document, 'script');
+        </script>
+    <noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
+    </div>
 {% endif %}
