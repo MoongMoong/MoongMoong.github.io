@@ -13,18 +13,20 @@ categories:
 
 ## 파이썬의 버전을 찾는법.
 
-파이썬은 버전에 따라서 조금씩 함수가 달라질 수 있다.
-특히 Python2와 Python3은 큰 차이를 갖는데 실수하지 않도록 버전을 항상 확인하자.
-특히 모듈을 잘못 설치할 수 있으니 조심하자.
+파이썬은 버전에 따라서 조금씩 함수가 달라질 수 있다.  
+특히 Python2와 Python3은 큰 차이를 갖는데 실수하지 않도록 버전을 항상 확인하자.  
+특히 모듈을 잘못 설치할 수 있으니 조심하자.  
 
-다음은 터미널에서 
+다음은 터미널에서 사용가능한 명령어이다.  
+각각 python2, 3용 명령어이다.  
+
+	python --version
+	python3 --version
+
+다음은 파이썬 코드 내에서 버전을 얻는 방법이다.
+sys모듈을 이용한다.
 
 	
-
-사용 예시이다.  
-위는 source파일을 50퍼센트로 작게 리사이즈해서 dest에 저장.  
-아래는 source파일을 1024*768 사이즈의 이미지로 리사이즈해서 dest.jpg에 저장  
-개인적으로는 %시 사이즈 끝자리가 제어되지 않아서 아래의 방법을 선호한다.  
-	
-	convert  -resize 50% source.png dest.jpg
-	convert -resize 1024X768  source.png dest.jpg
+	import sys
+	print(sys.version_info)
+	print(sys.version)
