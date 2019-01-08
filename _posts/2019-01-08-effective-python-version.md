@@ -1,7 +1,7 @@
 ---
 title: [effective python] 01. 우분투 파이썬 버전 (Ubuntu18.04 Ubuntu16.04 python version)
 layout: post
-date: '2019-01-08 19:33:36'
+date: '2019-01-08 8:33:36'
 excerpt: 마크다운에 이미지를 쉽게 올리자
 comments: true
 tag:
