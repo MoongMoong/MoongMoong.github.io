@@ -3,6 +3,7 @@ title: 우분투 PNG파일 ico파일로 변환 (Ubuntu18.04 Ubuntu16.04 PNG imag
 layout: post
 date: '2019-01-07 09:33:36'
 excerpt: PNG파일을 ico 파일로 바꾸자
+comments: true
 tag:
 - markdown
 - image

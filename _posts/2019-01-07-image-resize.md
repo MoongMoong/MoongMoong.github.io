@@ -3,6 +3,7 @@ title: 우분투 이미지 리사이즈 (Ubuntu18.04 Ubuntu16.04 image resize)
 layout: post
 date: '2019-01-07 09:33:36'
 excerpt: 마크다운에 이미지를 쉽게 올리자
+comments: true
 tag:
 - markdown
 - image

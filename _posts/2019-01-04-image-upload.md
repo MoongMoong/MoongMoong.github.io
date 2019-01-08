@@ -3,6 +3,7 @@ title: 마크다운 이미지 업로드 팁 (markdown image upload tip)
 layout: post
 date: '2019-01-04 09:33:36'
 excerpt: 마크다운에 이미지를 쉽게 올리자
+comments: true
 tag:
 - markdown
 - image

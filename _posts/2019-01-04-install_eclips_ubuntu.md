@@ -5,7 +5,7 @@ date: '2019-01-04 09:33:36'
 excerpt: 우분투에서 이클립스를 설치하는 방법
 categories:
 - Ubuntu
-comments: 'true'
+comments: true
 tag:
 - Ubuntu
 - c++
